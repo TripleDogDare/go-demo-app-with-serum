@@ -1,6 +1,7 @@
 package snoz
 
 import (
+	"fmt"
 	"math/rand"
 
 	"github.com/serum-errors/go-demo-app-with-serum/jobbers"
@@ -27,5 +28,6 @@ func (SnozJobber) TheJob() error {
 	if n%4 == 0 {
 		return jobbers.NewErrNatch(n)
 	}
+	fmt.Printf("job accomplished, by snoz\n")
 	return nil
 }

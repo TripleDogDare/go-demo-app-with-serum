@@ -33,5 +33,6 @@ func (FrobJobber) TheJob() error {
 	if n%4 == 0 {
 		return jobbers.NewErrNatch(n)
 	}
+	fmt.Printf("job accomplished, by frob\n")
 	return nil
 }
