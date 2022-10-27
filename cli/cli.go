@@ -104,6 +104,10 @@ type CmdDo struct {
 	jobberName *string
 }
 
+// Errors:
+//
+//   - jobber-error-foo -- for errors regarding foo.
+//   - jobber-error-natch -- if a natch appears!
 func (x CmdDo) Do() error {
 	var jobber jobbers.Jobber
 	switch *x.jobberName {
